@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav d-flex alnCenter jusContent-between">
+            <p>DojoWeather</p>
+            <div class="navRight d-flex alnCenter">
+                <a onclick="alert('This page says:    Loading weather report...')" href="#">Burbank</a>
+                <a href="#">Chicago</a>
+                <a href="#">Dallas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <div class="titleRight d-flex alnCenter jusContent-between">
+                <h1>San Hose</h1>
+                <p>show temperature in <span onclick="change(this)">&#8451;</span><em>&#11206;</em></p>
+            </div>
+        </div>
+        <div class="container d-flex jusContent-between alnCenter">
+            <div class="meteo d-flex jusContent-center column">
+                <div class="infoDay d-flex flexWrap jusContent-center">
+                    <h2>Today</h2>
+                    <img class="imgMeteo" src="./pic-weather/some_rain.png" alt="rain cloud">
+                    <p>some rain</p>
+                </div>
+                <div class="numbers d-flex alnCenter jusContent-around">
+                    <p class="red">24</p>
+                    <p class="blue">18</p>
+                </div>
+            </div>
+
+            <div class="meteo d-flex jusContent-center column">
+                <div class="infoDay d-flex flexWrap jusContent-center">
+                    <h2>Tomorrow</h2>
+                    <img class="imgMeteo" src="./pic-weather/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                </div>
+                <div class="numbers d-flex alnCenter jusContent-around">
+                    <p class="red">27</p>
+                    <p class="blue">19</p>
+                </div>
+            </div>
+
+            <div class="meteo d-flex jusContent-center column">
+                <div class="infoDay d-flex flexWrap jusContent-center">
+                    <h2>Friday</h2>
+                    <img class="imgMeteo" src="./pic-weather/some_clouds.png" alt="cloud">
+                    <p>some clouds</p>
+                </div>
+                <div class="numbers d-flex alnCenter jusContent-around">
+                    <p class="red">21</p>
+                    <p class="blue">16</p>
+                </div>
+            </div>
+            <div class="meteo d-flex jusContent-center column">
+                <div class="infoDay d-flex flexWrap jusContent-center">
+                    <h2>Saturday</h2>
+                    <img class="imgMeteo" src="./pic-weather/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                </div>
+                <div class="numbers d-flex alnCenter jusContent-around">
+                    <p class="red">26</p>
+                    <p class="blue">21</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="removeCookie" class="bottomCookie d-flex jusContent-around alnCenter">
+            <img src="./pic-weather/cookie.png" alt="cookie">
+            <div class="infoCookie d-flex column">
+                <h3>Stop! Cookie Time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="#">Read more</a></p>
+            </div>
+            <button onclick="hide(removeCookie)" class="btnAccept">I Accept</button>
+        </div>
+    </main>
+
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>
